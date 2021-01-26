@@ -29,7 +29,7 @@ const Navbar = () => {
             <LinksContainer>
                 <ul>
                     <li>
-                    <Link> About Us</Link></li>
+                    <Link to="/about/"> About Us</Link></li>
                    <li> <Link> Actors</Link></li>
                    <li> <Link> Contacts</Link></li>
                 </ul>
