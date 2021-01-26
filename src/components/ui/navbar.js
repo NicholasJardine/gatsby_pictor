@@ -18,6 +18,7 @@ const LinksContainer = styled.div`
         list-style:none;
         li{
             margin: 0 8px;
+            color:white;
         }
     }
 `
@@ -30,8 +31,8 @@ const Navbar = () => {
                 <ul>
                     <li>
                     <Link to="/about/"> About Us</Link></li>
-                   <li> <Link> Actors</Link></li>
-                   <li> <Link> Contacts</Link></li>
+                   <li> <Link to="/actors/"> Actors</Link></li>
+                   <li> <Link to="/contact/"> Contacts</Link></li>
                 </ul>
             </LinksContainer>
         </Container>
