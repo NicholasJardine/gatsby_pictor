@@ -10,6 +10,18 @@ const HeadingContainer = styled.div`
     position: relative;
     margin: 0 auto;
     align-items:center;
+
+    h1{    
+        font-weight:700;
+        color:blue;
+        margin-top:40px;   
+    }
+
+    h4{
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+    }
 `
 
 const Paragraph = styled.div`
@@ -23,32 +35,12 @@ const Paragraph = styled.div`
         font-size:16px;
         font-weight:500;
     }
-`
-const Heading = styled.div`
-    h1{
-        align-self:center;
-        justify-self:center;    
-        font-weight:700;
-        color:blue;
-        margin-top:40px;   
-    }
-
-    h4{
-        color: #CCA459;
-        font-weight: bold;
-        padding-top: 64px;
-        text-align: center;
-        color: blue;
-    }
+    
 `
 
 const AboutPage = () => (
   <Layout>
-      <HeadingContainer>
-
-      <Heading> <h1>How Pictor Works</h1></Heading>
-
-      </HeadingContainer>
+      <HeadingContainer><h1>How Pictor Works</h1> </HeadingContainer>
         <Paragraph>
             <p>The world is moving towards a “the easier, the better” approach and doing things online, quickly and easily is the new way to go. Why should the acting industry be any different?
 
@@ -62,7 +54,7 @@ const AboutPage = () => (
         </Paragraph>
         <HeadingContainer>
 
-        <Heading> <h4>IMPORTANT DISCLAIMERS</h4></Heading>
+         <h4>IMPORTANT DISCLAIMERS</h4>
 
         </HeadingContainer>
         <Paragraph>
