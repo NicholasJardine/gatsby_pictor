@@ -33,6 +33,14 @@ const LinksContainer = styled.div`
         li{
             margin: 0 8px;
             color:white;
+            a{
+                color:black;
+                text-decoration:none;
+                &:hover{
+                  color:white;
+                  transition: 200ms ease-in;
+                }
+            }
         }
     }
 `
