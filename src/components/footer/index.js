@@ -1,26 +1,26 @@
 import React from 'react'
 import {Container, Wrapper, Row, Column, Link, Title} from './styles/footer'
 
-export default function({children, ...restProps}) {
-    return <Contanier {...restProps}>{children}</Contanier>
+export default function Footers({children, ...restProps}) {
+    return <Container {...restProps}>{children}</Container>
 }
 
-Footer.Wrapper = function FooterWrapper({children, ...restProps}) {
+Footers.Wrapper = function FootersWrapper({children, ...restProps}) {
     return<Wrapper {...restProps}>{children}</Wrapper>
 }
 
-Footer.Row = function FooterRow({children, ...restProps}) {
+Footers.Row = function FootersRow({children, ...restProps}) {
     return<Row {...restProps}>{children}</Row>
 }
 
-Footer.Column = function FooterColumn({children, ...restProps}) {
+Footers.Column = function FootersColumn({children, ...restProps}) {
     return<Column {...restProps}>{children}</Column>
 }
 
-Footer.Link = function FooterLink({children, ...restProps}) {
+Footers.Link = function FootersLink({children, ...restProps}) {
     return<Link {...restProps}>{children}</Link>
 }
 
-Footer.Title = function FooterTitle({children, ...restProps}) {
+Footers.Title = function FootersTitle({children, ...restProps}) {
     return<Title {...restProps}>{children}</Title>
 }
