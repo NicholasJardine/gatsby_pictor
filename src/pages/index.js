@@ -16,14 +16,22 @@ border-radius: 24px;
 background: #CCA459;;
 text-align: center;
 font-weight:bold;
-width: 150px;;
+width: 150px;
+  a{
+    color:black;
+    text-decoration:none;
+    &:hover{
+      color:white;
+      transition: 200ms ease-in;
+    }
+  }
 `
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     {/* <FooterContainer></FooterContainer> */}
     <h1>Hi people</h1>
-    <SignUpButton>Get Started</SignUpButton>
+    <SignUpButton><Link to="#">Get Started</Link></SignUpButton>
     <p>Welcome to your new Gatsby site.</p>
 
     <Button href="./about/"> About</Button>
