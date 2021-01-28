@@ -26,12 +26,70 @@ width: 150px;
     }
   }
 `
+const BannerOne = styled.div`
+display:flex;
+background: black;
+text-align: center;
+font-weight:bold;
+width: 100%;
+height: auto;
+  a{
+    color:black;
+    text-decoration:none;
+    &:hover{
+      color:white;
+      transition: 200ms ease-in;
+    }
+  }
+`
+const HeadingContainer = styled.div`
+    width:80%;
+    display:flex;
+    position: relative;
+    margin: 0 auto;
+    align-items:center;
+
+    h1{    
+        font-weight:700;
+        color:blue;
+        margin-top:40px;   
+    }
+
+    h4{
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+    }
+`
+
+const Paragraph = styled.div`
+    width:80%;
+    display:flex;
+    position: relative;
+    margin: 0 auto;
+    align-self:center;
+    justify-self:center;
+    p, li{
+        font-size:16px;
+        font-weight:500;
+    }
+    
+`
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     {/* <FooterContainer></FooterContainer> */}
-    <h1>Hi people</h1>
+    <BannerOne>
+
+    <HeadingContainer> <h1>Pictor -Simplifying Casting on Both ends
+        </h1>
+        </HeadingContainer>
+
+    </BannerOne>
     <SignUpButton><Link to="#">Get Started</Link></SignUpButton>
+
+
     <p>Welcome to your new Gatsby site.</p>
 
     <Button href="./about/"> About</Button>
