@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'gatsby'
-
-
-
+import Img from 'gatsby-image';
+import myImage from '../../assets/LOGO4.png';
 
 const Container = styled.nav`
     width:100%;
@@ -25,6 +24,8 @@ height:150px;
         height: 350px;
     }
 `
+
+
 const LinksContainer = styled.div`
     ul {
         display:flex;
@@ -49,6 +50,7 @@ const Navbar = () => {
     return (
         <Container>
             <LogoContainer>
+                {/* <LogoImage></LogoImage> */}
             </LogoContainer>
             <LinksContainer>
                 <ul>

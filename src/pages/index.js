@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import FooterContainer from '../containers/footer'
 import {Button} from 'react-bootstrap'
 import styled from 'styled-components';
+// import LogoImage from "../components/ui/nav-image"
 
 
 const SignUpButton = styled.div`
@@ -99,7 +100,7 @@ const IndexPage = () => (
     </div>
     <Link to="/page-2/" className="btn btn-outline-primary">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  
+  {/* <LogoImage></LogoImage> */}
   </Layout>
 )
 
