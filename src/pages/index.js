@@ -1,10 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import FooterContainer from '../containers/footer'
 import styled from 'styled-components';
 
 
@@ -61,24 +59,9 @@ const HeadingContainer = styled.div`
     }
 `
 
-const Paragraph = styled.div`
-    width:80%;
-    display:flex;
-    position: relative;
-    margin: 0 auto;
-    align-self:center;
-    justify-self:center;
-    p, li{
-        font-size:16px;
-        font-weight:500;
-    }
-    
-`
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <FooterContainer></FooterContainer> */}
     <BannerOne>
 
     <HeadingContainer> <h1>Pictor -Simplifying Casting on Both ends
@@ -91,7 +74,6 @@ const IndexPage = () => (
 
     <p>Welcome to your new Gatsby site.</p>
 
-    <Button href="./about/"> About</Button>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
