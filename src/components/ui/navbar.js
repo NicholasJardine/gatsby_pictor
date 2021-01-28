@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'gatsby'
 
+
+
+
 const Container = styled.nav`
     width:100%;
     height:80px;
@@ -10,7 +13,18 @@ const Container = styled.nav`
     align-items: center;
     background-color:blue;
 `
-const LogoContainer = styled.div``
+const LogoContainer = styled.div`
+display:flex;
+align-items:center;
+justify-content:center;
+width:350px;
+height:150px;
+    img{
+        flex-shrink: 1;
+        min-width: 100%;
+        height: 350px;
+    }
+`
 const LinksContainer = styled.div`
     ul {
         display:flex;
@@ -26,7 +40,8 @@ const LinksContainer = styled.div`
 const Navbar = () => {
     return (
         <Container>
-            <div>This is the logo</div>
+            <LogoContainer>
+            </LogoContainer>
             <LinksContainer>
                 <ul>
                     <li>
