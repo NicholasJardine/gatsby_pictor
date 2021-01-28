@@ -5,9 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import FooterContainer from '../containers/footer'
-import {Button} from 'react-bootstrap'
 import styled from 'styled-components';
-// import LogoImage from "../components/ui/nav-image"
 
 
 const SignUpButton = styled.div`
