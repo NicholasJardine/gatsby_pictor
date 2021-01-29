@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'gatsby'
+import { Link } from 'gatsby';
+import Image from './image'
 
 const Container = styled.nav`
     width:100%;
@@ -8,9 +9,17 @@ const Container = styled.nav`
     display:flex;
     justify-content:space-between;
     align-items: center;
-    background-color:blue;
+    background-color:white;
 `
-const LogoContainer = styled.div``
+const LogoContainer = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:350px;
+    height: 100%;
+`
+
+
 const LinksContainer = styled.div`
     ul {
         display:flex;
@@ -18,6 +27,15 @@ const LinksContainer = styled.div`
         list-style:none;
         li{
             margin: 0 8px;
+            color:white;
+            a{
+                color:black;
+                text-decoration:none;
+                &:hover{
+                  color:white;
+                  transition: 200ms ease-in;
+                }
+            }
         }
     }
 `
@@ -25,13 +43,20 @@ const LinksContainer = styled.div`
 const Navbar = () => {
     return (
         <Container>
-            <div>This is the logo</div>
+            <LogoContainer>
+                <Image />
+            </LogoContainer>
             <LinksContainer>
                 <ul>
                     <li>
-                    <Link> About Us</Link></li>
-                   <li> <Link> Actors</Link></li>
-                   <li> <Link> Contacts</Link></li>
+                    <Link to="/about/"> About Us</Link>
+                    </li>
+                   <li>
+                       <Link to="/actors/"> Actors</Link>
+                    </li>
+                   <li>
+                       <Link to="/contact/"> Contacts</Link>
+                    </li>
                 </ul>
             </LinksContainer>
         </Container>
